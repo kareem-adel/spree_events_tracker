@@ -17,10 +17,9 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  spree_version = '~> 3.4.0.alpha'
   s.add_dependency 'spree_extension', '~> 0.0.5'
 
-  s.add_dependency 'spree_core', spree_version
+  s.add_dependency 'spree_core', '>= 3.1.0', '< 4.0'
   s.add_development_dependency 'appraisal'
   s.add_development_dependency 'capybara', '~> 2.6'
   s.add_development_dependency 'coffee-rails', '~> 4.2'
@@ -34,6 +33,6 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'shoulda-matchers', '~> 3.1.1'
   s.add_development_dependency 'simplecov', '~> 0.13.0'
   s.add_development_dependency 'sqlite3', '~> 1.3.0'
-  s.add_development_dependency 'spree_backend', spree_version
-  s.add_development_dependency 'spree_frontend', spree_version
+  s.add_development_dependency 'spree_backend', '>= 3.1.0', '< 4.0'
+  s.add_development_dependency 'spree_frontend', '>= 3.1.0', '< 4.0'
 end
